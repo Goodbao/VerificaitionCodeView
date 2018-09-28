@@ -1,7 +1,7 @@
 # VerificationCodeView
 [Android 自定义View_方框验证码](https://www.jianshu.com/p/eb5b161c8a0e)
 
-[VerificationCodeView](https://upload-images.jianshu.io/upload_images/1627327-94467145f870ac3b.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/400/format/webp)
+![VerificationCodeView](https://upload-images.jianshu.io/upload_images/1627327-94467145f870ac3b.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/400/format/webp)
 
 方框验证码View
 
