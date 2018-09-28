@@ -1,4 +1,4 @@
-# VCode
+# VerificationCodeView
 [Android 自定义View_方框验证码](https://www.jianshu.com/p/eb5b161c8a0e)
 
 方框验证码View
