@@ -1,4 +1,5 @@
 # VCode
+[Android 自定义View_方框验证码](https://www.jianshu.com/p/eb5b161c8a0e)
 方框验证码View
 刚开始做这个自定义view，我是想着用多个EditText来实现功能，做到后面发现在获取焦点这个问题上，多个EditText处理不了，于是上网看了别的思路，就是用多个TextView显示，但是输入的EditText只有一个，我觉得这个思路可行，自己再次动手改代码。
 
