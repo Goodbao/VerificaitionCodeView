@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-<com.wuyanhua.verificationcodeview.VerificationCodeView
-    android:id="@+id/verificationCodeView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:paddingBottom="20dp"
-    android:paddingTop="20dp"
-    app:vCodeBackgroundFocus="@drawable/verification_code_et_bg_focus"
-    app:vCodeBackgroundNormal="@drawable/verification_code_et_bg_normal"
-    app:vCodeDataLength="6"
-    app:vCodeHeight="45dp"
-    app:vCodeMargin="10dp"
-    app:vCodeTextColor="@color/black"
-    app:vCodeTextSize="8sp"
-    app:vCodeWidth="45dp" />
+    <com.wuyanhua.verificationcodeview.VerificationCodeView
+        android:id="@+id/verificationCodeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        app:vCodeBackgroundFocus="@drawable/verification_code_et_bg_focus"
+        app:vCodeBackgroundNormal="@drawable/verification_code_et_bg_normal"
+        app:vCodeDataLength="6"
+        app:vCodeHeight="45dp"
+        app:vCodeMargin="10dp"
+        app:vCodeTextColor="@color/black"
+        app:vCodeTextSize="24sp"
+        app:vCodeWidth="45dp" />
 
+    <com.wuyanhua.verificationcodeview.VerificationCodeView
+        android:id="@+id/verificationCodeView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        app:vCodeBackgroundFocus="@drawable/verification_code_et_line_bg_focus"
+        app:vCodeBackgroundNormal="@drawable/verification_code_et_line_bg_normal"
+        app:vCodeDataLength="6"
+        app:vCodeHeight="45dp"
+        app:vCodeMargin="10dp"
+        app:vCodeTextColor="@color/black"
+        app:vCodeTextSize="24sp"
+        app:vCodeWidth="45dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="confirm"
+        android:textColor="@color/white" />
+
+</LinearLayout>

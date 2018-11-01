@@ -162,8 +162,12 @@ private void initEditText() {
 
         @Override
         public void afterTextChanged(Editable s) {
-            if (s.length() == vCodeLength && null != onVerificationCodeCompleteListener) {
-                onVerificationCodeCompleteListener.verificationCodeComplete(s.toString());
+            if (null != onVerificationCodeCompleteListener) {
+                if (s.length() == vCodeLength) {
+                    onVerificationCodeCompleteListener.verificationCodeComplete(s.toString());
+                } else {
+                    onVerificationCodeCompleteListener.verificationCodeIncomplete(s.toString());
+                }
             }
         }
     });
@@ -200,7 +204,8 @@ private void initEditText() {
             //textView.setLayoutParams(layoutParams);
             textView.setBackgroundResource(tvBgNormal);
             textView.setGravity(Gravity.CENTER);
-            textView.setTextSize(tvTextSize);
+            //注意单位
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_PX,tvTextSize);
             textView.setTextColor(tvTextColor);
 
             tvList.add(textView);
@@ -246,7 +251,11 @@ private void tvSetFocus(TextView textView) {
  * 输入完成回调接口
  */
 public interface OnVerificationCodeCompleteListener {
+    //完成输入
     void verificationCodeComplete(String verificationCode);
+
+    //未完成输入
+    void verificationCodeIncomplete(String verificationCode);
 }
 
 public void setOnVerificationCodeCompleteListener(OnVerificationCodeCompleteListener onVerificationCodeCompleteListener) {
